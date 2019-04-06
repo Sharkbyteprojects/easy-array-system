@@ -1,4 +1,5 @@
 # Funktionen
+[AZURE TEST](https://dev.azure.com/sharkbyteprojects/easy-array-system)
 
 - `generate(array)` = add to arrays the content of array. Example: `generate({name: "hai", testid: 3});` adds the content `{name: "hai", testid: 3}` at last
 - `readall()` = Become the full array
