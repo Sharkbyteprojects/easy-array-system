@@ -1,24 +1,29 @@
 var mains = [];
 var num = 0;
-function generate(array){
+function generate(array) {
     mains[num] = array;
     num++;
-}function readall(){
+}
+function readall() {
     return mains;
-}function read(idno){
+}
+function read(idno) {
     return mains[idno];
-} function reade(idno, name){
-    return eval(`mains[${idno}].` + name);
-}function change(idno, array){
+}
+function reade(idno, name) {
+    return eval("mains[" + idno + "]." + name);
+}
+function change(idno, array) {
     mains[idno] = array;
-}function changee(idno, name, array){
-    eval(`mains[${idno}].${name} = ${array}`)
+}
+function changee(idno, name, array) {
+    eval("mains[" + idno + "]." + name + " = " + array);
 }
 module.exports = {
-    generate,
-    readall,
-    read,
-    reade,
-    change,
-    changee,
+    generate: generate,
+    readall: readall,
+    read: read,
+    reade: reade,
+    change: change,
+    changee: changee
 };

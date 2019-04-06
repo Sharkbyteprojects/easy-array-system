@@ -4,7 +4,8 @@
   "description": "Easy inplement arrays ",
   "main": "main.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "start": "tsc main.ts"
   },
   "keywords": [
     "Array",
@@ -13,5 +14,8 @@
     "var"
   ],
   "author": "Sharkbyteprojects",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.4.2"
+  }
 }
