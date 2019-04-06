@@ -4,8 +4,7 @@
   "description": "Easy inplement arrays ",
   "main": "main.js",
   "scripts": {
-    "test": "node test.js && echo --- && gulp test && gulp nodeunit",
-    "start": "node index.js"
+    "test": "node test.js"
   },
   "keywords": [
     "Array",
@@ -14,10 +13,5 @@
     "var"
   ],
   "author": "Sharkbyteprojects",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "gulp-eslint": "^5.0.0",
-    "gulp-nodeunit": "^0.1.0"
-  }
+  "license": "ISC"
 }
