@@ -1,8 +1,18 @@
 //CREATED BY SHARKBYTEPROJECTS
 const { src, dest, parallel, task } = require('gulp');
-const rename = require('gulp-rename');
-const fileroot = "optfiles/"
+const nodeunit = require('gulp-nodeunit');
+const eslint = require('gulp-eslint');
+const fileroot = "./"
 task ('test', () => {
   return src(fileroot + 'main.js')
-    .pipe(concat('all.js'))
+  .pipe(eslint())
 });
+task ('nodeunit', () => {
+    return src(fileroot + 'testunit.js')
+    .pipe(nodeunit({
+        reporter: 'junit',
+        reporterOptions: {
+            output: 'test'
+        }
+    }))
+  });
