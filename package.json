@@ -4,8 +4,8 @@
   "description": "Easy inplement arrays ",
   "main": "main.js",
   "scripts": {
-    "install": "npm i -g typescript && tsc main",
-    "test": "node test.js && tsc main.ts && plato -d plato-output -r .",
+    "install": "npm i -g typescript && echo --- && tsc main",
+    "test": "node test.js && tsc main.ts",
     "start": "node test.js"
   },
   "keywords": [
