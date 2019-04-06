@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "install": "npm i -g typescript && tsc main",
-    "test": "node test.js && plato -d plato-output -r .",
-    "start": "tsc main.ts"
+    "test": "node test.js && tsc main.ts && plato -d plato-output -r .",
+    "start": "node test.js"
   },
   "keywords": [
     "Array",
