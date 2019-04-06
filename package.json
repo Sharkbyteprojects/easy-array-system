@@ -4,7 +4,8 @@
   "description": "Easy inplement arrays ",
   "main": "main.js",
   "scripts": {
-    "test": "node test.js",
+    "install": "npm i -g typescript && tsc main",
+    "test": "node test.js && plato -d plato-output -r .",
     "start": "tsc main.ts"
   },
   "keywords": [
@@ -16,6 +17,7 @@
   "author": "Sharkbyteprojects",
   "license": "ISC",
   "devDependencies": {
+    "plato": "^1.7.0",
     "typescript": "^3.4.2"
   }
 }
